@@ -25,6 +25,7 @@ export const App: FC = (props) => {
           childrenGap: 20,
           maxWidth: 1200
         }}
+        horizontalAlign="center"
       >
         <AddUserButton
           onClick={() => {
