@@ -2,7 +2,6 @@ import {
   DetailsList,
   DetailsListLayoutMode,
   DetailsRow,
-  DialogType,
   IColumn,
   IDetailsRowProps,
   IDetailsRowStyles,
@@ -107,7 +106,7 @@ const UserList: FC<IProps> = (props) => {
     ];
 
     return columns;
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
@@ -115,9 +114,7 @@ const UserList: FC<IProps> = (props) => {
         items={users}
         columns={columns}
         layoutMode={DetailsListLayoutMode.justified}
-        //   selection={this._selection}
         selectionPreservedOnEmptyClick={true}
-        // onItemInvoked={this._onItemInvoked}
         selectionMode={SelectionMode.none}
         ariaLabelForGrid="UserList"
         onRenderRow={onRenderRow}
@@ -165,8 +162,6 @@ const onRenderRow: IRenderFunction<IDetailsRowProps> = (props) => {
       },
     };
 
-    console.log("props.theme", props.theme);
-    console.log("customStyles", customStyles);
     return <DetailsRow {...props} styles={customStyles} />;
   }
 

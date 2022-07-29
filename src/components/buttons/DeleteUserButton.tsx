@@ -13,7 +13,6 @@ const EditUserButton: FC<IProps> = (props) => {
       }}
       title="Delete"
       ariaLabel="Delete"
-      //   disabled={disabled}
       theme={redTheme}
     />
   );

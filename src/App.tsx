@@ -1,5 +1,5 @@
-import { loadTheme, Stack } from "@fluentui/react";
-import React, { FC, useState } from "react";
+import { Stack } from "@fluentui/react";
+import React, { FC } from "react";
 import AddUserButton from "./components/buttons/AddUserButton";
 import UserList from "./components/lists/UserList";
 import { initializeIcons } from "@fluentui/font-icons-mdl2";
@@ -45,5 +45,3 @@ export const App: FC = (props) => {
     </div>
   );
 };
-
-

@@ -12,7 +12,6 @@ const EditUserButton: FC<IProps> = (props) => {
       }}
       title="Edit"
       ariaLabel="Edit"
-      //   disabled={disabled}
     />
   );
 };
