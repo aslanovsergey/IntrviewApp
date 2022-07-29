@@ -23,6 +23,7 @@ export const App: FC = (props) => {
       <Stack
         tokens={{
           childrenGap: 20,
+          maxWidth: 1200
         }}
       >
         <AddUserButton
