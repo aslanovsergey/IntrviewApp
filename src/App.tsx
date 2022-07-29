@@ -18,14 +18,15 @@ export const App: FC = (props) => {
     <div
       style={{
         padding: 20,
+        display: "flex",
+        justifyContent: "center",
       }}
     >
       <Stack
         tokens={{
           childrenGap: 20,
-          maxWidth: 1200
+          maxWidth: 1200,
         }}
-        horizontalAlign="center"
       >
         <AddUserButton
           onClick={() => {
