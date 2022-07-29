@@ -54,6 +54,7 @@ const stateSlice = createSlice({
     },
     updateUser: (state, action: PayloadAction<IUser>) => {
       const updatedUser = action.payload;
+      updatedUser.updatedOn = new Date();
 
       const userIndex = state.users.findIndex((u) => u.id === updatedUser.id);
       const updatedUsers = [...state.users]
